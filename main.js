@@ -14,6 +14,9 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   $scope.fatherLash = 'Pick';
   $scope.motherLash = 'Pick';
 
+  $scope.fatherDimples = 'Pick';
+  $scope.motherDimples = 'Pick';
+
 
 
 
@@ -67,7 +70,14 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
     $scope.motherLash = length
   }
 
+// Dimples
+  $scope.fatherDimplesApperience = function(length) {
+    $scope.fatherDimples = length
+  }
 
+  $scope.motherDimplesApperience = function(length) {
+    $scope.motherDimples = length
+  }
 
 
 
