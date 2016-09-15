@@ -159,6 +159,35 @@
     <input type="submit" value="Submit">
    </div>
 
+<!-- Freckles -->
+  <!-- Father -->
+   <div>
+    <p>Dimples</p>
+    <p>Father</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="fatherFreckles" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ fatherFreckles }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherFreckles">
+        <li role="menuitem"><a ng-click="fatherFrecklesApperience('Has Freckles')" href="#">Has Freckles</a></li>
+        <li role="menuitem"><a ng-click="fatherFrecklesApperience('No Freckles')" href="#">No Freckles</a></li>
+      </ul>
+    </div>
+
+    <!-- mother -->
+    <p>Mother</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="motherFreckles" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ motherFreckles }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherFreckles">
+        <li role="menuitem"><a ng-click="motherFrecklesApperience('Has Freckles')" href="#">Has Freckles</a></li>
+        <li role="menuitem"><a ng-click="motherFrecklesApperience('No Freckles')" href="#">No Freckles</a></li>
+      </ul>
+    </div>
+    <input type="submit" value="Submit">
+   </div>
+
 
 
     <script src="bower_components/angular/angular.min.js"></script>

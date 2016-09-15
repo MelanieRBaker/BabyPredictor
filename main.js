@@ -17,6 +17,9 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   $scope.fatherDimples = 'Pick';
   $scope.motherDimples = 'Pick';
 
+  $scope.fatherFreckles = 'Pick';
+  $scope.motherFreckles = 'Pick';
+
 
 
 
@@ -71,13 +74,27 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   }
 
 // Dimples
-  $scope.fatherDimplesApperience = function(length) {
-    $scope.fatherDimples = length
+  $scope.fatherDimplesApperience = function(Apperience) {
+    $scope.fatherDimples = Apperience
   }
 
-  $scope.motherDimplesApperience = function(length) {
-    $scope.motherDimples = length
+  $scope.motherDimplesApperience = function(Apperience) {
+    $scope.motherDimples = Apperience
   }
+
+// Freckles
+  $scope.fatherFrecklesApperience = function(Apperience) {
+    $scope.fatherFreckles = Apperience
+  }
+
+  $scope.motherFrecklesApperience = function(Apperience) {
+    $scope.motherFreckles = Apperience
+  }
+
+
+
+
+
 
 
 
