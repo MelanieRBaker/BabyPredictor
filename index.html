@@ -162,7 +162,7 @@
 <!-- Freckles -->
   <!-- Father -->
    <div>
-    <p>Dimples</p>
+    <p>Freckles</p>
     <p>Father</p>
     <div class="btn-group" uib-dropdown>
       <button id="fatherFreckles" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
@@ -187,6 +187,44 @@
     </div>
     <input type="submit" value="Submit">
    </div>
+
+<!-- Ear Lobes -->
+  <!-- Father -->
+   <div>
+    <p>Ear Lobes</p>
+    <p>Father</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="fatherEar" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ fatherEar }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherEar">
+        <li role="menuitem"><a ng-click="fatherEarLobes('Unattached')" href="#">Unattached</a></li>
+        <li role="menuitem"><a ng-click="fatherEarLobes('Attached')" href="#">Attached</a></li>
+      </ul>
+    </div>
+
+    <!-- mother -->
+    <p>Mother</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="motherEar" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ motherEar }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherEar">
+        <li role="menuitem"><a ng-click="motherEarLobes('Unattached')" href="#">Unattached</a></li>
+        <li role="menuitem"><a ng-click="motherEarLobes('Attached')" href="#">Attached</a></li>
+      </ul>
+    </div>
+    <input type="submit" value="Submit">
+   </div>
+
+
+
+
+
+
+
+
+
 
 <!-- Hair Type -->
   <!-- Father -->

@@ -20,6 +20,9 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   $scope.fatherFreckles = 'Pick';
   $scope.motherFreckles = 'Pick';
 
+  $scope.fatherEar = 'Pick';
+  $scope.motherEar = 'Pick';
+
   $scope.fatherHair = 'Pick';
   $scope.motherHair = 'Pick';
 
@@ -93,6 +96,15 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
 
   $scope.motherFrecklesApperience = function(apperience) {
     $scope.motherFreckles = apperience
+  }
+
+// EarLobes
+  $scope.fatherEarLobes = function(apperience) {
+    $scope.fatherEar = apperience
+  }
+
+  $scope.motherEarLobes = function(apperience) {
+    $scope.motherEar = apperience
   }
 
 // HairType
