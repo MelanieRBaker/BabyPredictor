@@ -32,6 +32,8 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   $scope.fatherHairColor = 'Pick';
   $scope.motherHairColor = 'Pick';
 
+  $scope.fatherHairy = 'Pick';
+  $scope.motherHairy = 'Pick';
 
   $scope.status = {
     isopen: false
@@ -134,6 +136,14 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
     $scope.motherHairColor = color
   }
 
+// Hairy
+  $scope.fatherHairyPerson = function(apperience) {
+    $scope.fatherHairy = apperience
+  }
+
+  $scope.motherHairyPerson = function(apperience) {
+    $scope.motherHairy = apperience
+  }
 
 
 

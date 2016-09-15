@@ -217,15 +217,6 @@
     <input type="submit" value="Submit">
    </div>
 
-
-
-
-
-
-
-
-
-
 <!-- Hair Type -->
   <!-- Father -->
    <div>
@@ -314,6 +305,34 @@
     <input type="submit" value="Submit">
    </div>
 
+<!-- Hairy -->
+  <!-- Father -->
+   <div>
+    <p>Hairy</p>
+    <p>Father</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="fatherHairy" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ fatherHairy }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherHairy">
+        <li role="menuitem"><a ng-click="fatherHairyPerson('Hairy')" href="#">Hairy</a></li>
+        <li role="menuitem"><a ng-click="fatherHairyPerson('Not Hairy')" href="#">Not Hairy</a></li>
+      </ul>
+    </div>
+
+    <!-- mother -->
+    <p>Mother</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="motherHairy" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ motherHairy }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherHairy">
+        <li role="menuitem"><a ng-click="motherHairyPerson('Hairy')" href="#">Hairy</a></li>
+        <li role="menuitem"><a ng-click="motherHairyPerson('Not Hairy')" href="#">Not Hairy</a></li>
+      </ul>
+    </div>
+    <input type="submit" value="Submit">
+   </div>
 
 
 
