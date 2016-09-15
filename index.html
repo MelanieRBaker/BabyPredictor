@@ -217,6 +217,35 @@
     <input type="submit" value="Submit">
    </div>
 
+<!-- Widows Peak -->
+  <!-- Father -->
+   <div>
+    <p>Widow's Peak</p>
+    <p>Father</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="fatherPeak" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ fatherPeak }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherPeak">
+        <li role="menuitem"><a ng-click="fatherWidowsPeak('Has Peak')" href="#">Has Peak</a></li>
+        <li role="menuitem"><a ng-click="fatherWidowsPeak('No Peak')" href="#">No Peak</a></li>
+      </ul>
+    </div>
+
+    <!-- mother -->
+    <p>Mother</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="motherPeak" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ motherPeak }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherPeak">
+        <li role="menuitem"><a ng-click="motherWidowsPeak('Has Peak')" href="#">Has Peak</a></li>
+        <li role="menuitem"><a ng-click="motherWidowsPeak('No Peak')" href="#">No Peak</a></li>
+      </ul>
+    </div>
+    <input type="submit" value="Submit">
+   </div>
+
 
 
     <script src="bower_components/angular/angular.min.js"></script>

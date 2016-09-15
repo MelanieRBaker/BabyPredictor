@@ -23,7 +23,8 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   $scope.fatherHair = 'Pick';
   $scope.motherHair = 'Pick';
 
-
+  $scope.fatherPeak = 'Pick';
+  $scope.motherPeak = 'Pick';
 
 
 
@@ -101,7 +102,14 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
     $scope.motherHair = type
   }
 
+// WidowsPeak
+  $scope.fatherWidowsPeak = function(apperience) {
+    $scope.fatherPeak = apperience
+  }
 
+  $scope.motherWidowsPeak = function(apperience) {
+    $scope.motherPeak = apperience
+  }
 
 
 
