@@ -20,7 +20,8 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   $scope.fatherFreckles = 'Pick';
   $scope.motherFreckles = 'Pick';
 
-
+  $scope.fatherHair = 'Pick';
+  $scope.motherHair = 'Pick';
 
 
 
@@ -74,24 +75,31 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   }
 
 // Dimples
-  $scope.fatherDimplesApperience = function(Apperience) {
-    $scope.fatherDimples = Apperience
+  $scope.fatherDimplesApperience = function(apperience) {
+    $scope.fatherDimples = apperience
   }
 
-  $scope.motherDimplesApperience = function(Apperience) {
-    $scope.motherDimples = Apperience
+  $scope.motherDimplesApperience = function(apperience) {
+    $scope.motherDimples = apperience
   }
 
 // Freckles
-  $scope.fatherFrecklesApperience = function(Apperience) {
-    $scope.fatherFreckles = Apperience
+  $scope.fatherFrecklesApperience = function(apperience) {
+    $scope.fatherFreckles = apperience
   }
 
-  $scope.motherFrecklesApperience = function(Apperience) {
-    $scope.motherFreckles = Apperience
+  $scope.motherFrecklesApperience = function(apperience) {
+    $scope.motherFreckles = apperience
   }
 
+// HairType
+  $scope.fatherHairType = function(type) {
+    $scope.fatherHair = type
+  }
 
+  $scope.motherHairType = function(type) {
+    $scope.motherHair = type
+  }
 
 
 

@@ -188,6 +188,35 @@
     <input type="submit" value="Submit">
    </div>
 
+<!-- Hair Type -->
+  <!-- Father -->
+   <div>
+    <p>Hair Type</p>
+    <p>Father</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="fatherHair" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ fatherHair }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherHair">
+        <li role="menuitem"><a ng-click="fatherHairType('Curly')" href="#">Curly</a></li>
+        <li role="menuitem"><a ng-click="fatherHairType('Straight')" href="#">Straight</a></li>
+      </ul>
+    </div>
+
+    <!-- mother -->
+    <p>Mother</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="motherHair" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ motherHair }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherHair">
+        <li role="menuitem"><a ng-click="motherHairType('Curly')" href="#">Curly</a></li>
+        <li role="menuitem"><a ng-click="motherHairType('Straight')" href="#">Straight</a></li>
+      </ul>
+    </div>
+    <input type="submit" value="Submit">
+   </div>
+
 
 
     <script src="bower_components/angular/angular.min.js"></script>
