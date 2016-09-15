@@ -247,6 +247,41 @@
    </div>
 
 
+<!-- Hair Color -->
+  <!-- Father -->
+   <div>
+    <p>Hair Color</p>
+    <p>Father</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="fatherHairColor" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ fatherHairColor }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherHairColor">
+        <li role="menuitem"><a ng-click="fatherHairColors('Black')" href="#">Black</a></li>
+        <li role="menuitem"><a ng-click="fatherHairColors('Brown')" href="#">Brown</a></li>
+      </ul>
+    </div>
+
+    <!-- mother -->
+    <p>Mother</p>
+    <div class="btn-group" uib-dropdown>
+      <button id="motherHairColor" type="button" class="btn btn-primary" uib-dropdown-toggle ng-disabled="disabled">
+        {{ motherHairColor }} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherHairColor">
+        <li role="menuitem"><a ng-click="motherHairColors('Black')" href="#">Black</a></li>
+        <li role="menuitem"><a ng-click="motherHairColors('Brown')" href="#">Brown</a></li>
+      </ul>
+    </div>
+    <input type="submit" value="Submit">
+   </div>
+
+
+
+
+
+
+
 
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
