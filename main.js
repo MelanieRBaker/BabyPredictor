@@ -47,102 +47,223 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
 
 
 // skin
-  $scope.fatherSkinColor = function(color) {
+  $scope.fatherSkinColor = function(color, value) {
     $scope.fatherSkin = color
+    $scope.fatherSkinValue = value
   }
 
-  $scope.motherSkinColor = function(color) {
+  $scope.motherSkinColor = function(color, value) {
     $scope.motherSkin = color
+    $scope.motherSkinValue = value
+  }
+
+  $scope.skinComparison = function (){
+    if ($scope.fatherSkinValue > $scope.motherSkinValue){
+      $scope.skinValue = $scope.fatherSkinValue
+    } else {
+      $scope.skinValue = $scope.motherSkinValue
+    }
+    console.log($scope.skinValue)
   }
 
 // Brows
-  $scope.fatherBrowsConnection = function(connection) {
+  $scope.fatherBrowsConnection = function(connection, value) {
     $scope.fatherBrows = connection
+    $scope.fatherBrowsValue = value
   }
 
-  $scope.motherBrowsConnection = function(connection) {
+  $scope.motherBrowsConnection = function(connection, value) {
     $scope.motherBrows = connection
+    $scope.motherBrowsValue = value
+  }
+
+  $scope.browsComparison = function (){
+    if ($scope.fatherBrowsValue > $scope.motherBrowsValue){
+      $scope.browsValue = $scope.fatherBrowsValue
+    } else {
+      $scope.browsValue = $scope.motherBrowsValue
+    }
+    console.log($scope.browsValue)
   }
 
 // eyecolor
-  $scope.fatherEyeColor = function(color) {
+  $scope.fatherEyeColor = function(color, value) {
     $scope.fatherEye = color
+    $scope.fatherEyeValue = value
   }
 
-  $scope.motherEyeColor = function(color) {
+  $scope.motherEyeColor = function(color, value) {
     $scope.motherEye = color
+    $scope.motherEyeValue = value
+  }
+
+  $scope.eyeComparison = function (){
+    if ($scope.fatherEyeValue > $scope.motherEyeValue){
+      $scope.eyeValue = $scope.fatherEyeValue
+    } else {
+      $scope.eyeValue = $scope.motherEyeValue
+    }
+    console.log($scope.eyeValue)
   }
 
 // lash
-  $scope.fatherLashLength = function(length) {
+  $scope.fatherLashLength = function(length, value) {
     $scope.fatherLash = length
+    $scope.fatherLashValue = value
   }
 
-  $scope.motherLashLength = function(length) {
+  $scope.motherLashLength = function(length, value) {
     $scope.motherLash = length
+    $scope.motherLashValue = value
+  }
+
+  $scope.lashComparison = function (){
+    if ($scope.fatherLashValue > $scope.motherLashValue){
+      $scope.lashValue = $scope.fatherLashValue
+    } else {
+      $scope.lashValue = $scope.motherLashValue
+    }
+    console.log($scope.lashValue)
   }
 
 // Dimples
-  $scope.fatherDimplesApperience = function(apperience) {
+  $scope.fatherDimplesApperience = function(apperience, value) {
     $scope.fatherDimples = apperience
+    $scope.fatherDimplesValue = value
   }
 
-  $scope.motherDimplesApperience = function(apperience) {
+  $scope.motherDimplesApperience = function(apperience, value) {
     $scope.motherDimples = apperience
+    $scope.motherDimplesValue = value
+  }
+
+  $scope.dimplesComparison = function (){
+    if ($scope.fatherDimplesValue > $scope.motherDimplesValue){
+      $scope.dimplesValue = $scope.fatherDimplesValue
+    } else {
+      $scope.dimplesValue = $scope.motherDimplesValue
+    }
+    console.log($scope.dimplesValue)
   }
 
 // Freckles
-  $scope.fatherFrecklesApperience = function(apperience) {
+  $scope.fatherFrecklesApperience = function(apperience, value) {
     $scope.fatherFreckles = apperience
+    $scope.fatherFrecklesValue = value
   }
 
-  $scope.motherFrecklesApperience = function(apperience) {
+  $scope.motherFrecklesApperience = function(apperience, value) {
     $scope.motherFreckles = apperience
+    $scope.motherFrecklesValue =value
+  }
+
+  $scope.frecklesComparison = function (){
+    if ($scope.fatherFrecklesValue > $scope.motherFrecklesValue){
+      $scope.frecklesValue = $scope.fatherFrecklesValue
+    } else {
+      $scope.frecklesValue = $scope.motherFrecklesValue
+    }
+    console.log($scope.frecklesValue)
   }
 
 // EarLobes
-  $scope.fatherEarLobes = function(apperience) {
+  $scope.fatherEarLobes = function(apperience, value) {
     $scope.fatherEar = apperience
+    $scope.fatherEarValue = value
   }
 
-  $scope.motherEarLobes = function(apperience) {
+  $scope.motherEarLobes = function(apperience, value) {
     $scope.motherEar = apperience
+    $scope.motherEarValue = value
+  }
+
+   $scope.earComparison = function (){
+    if ($scope.fatherEarValue > $scope.motherEarValue){
+      $scope.earValue = $scope.fatherEarValue
+    } else {
+      $scope.earValue = $scope.motherEarValue
+    }
+    console.log($scope.earValue)
   }
 
 // HairType
-  $scope.fatherHairType = function(type) {
+  $scope.fatherHairType = function(type, value) {
     $scope.fatherHair = type
+    $scope.fatherHairValue = value
   }
 
-  $scope.motherHairType = function(type) {
+  $scope.motherHairType = function(type, value) {
     $scope.motherHair = type
+    $scope.motherHairValue = value
+  }
+
+   $scope.hairComparison = function (){
+    if ($scope.fatherHairValue > $scope.motherHairValue){
+      $scope.hairValue = $scope.fatherHairValue
+    } else {
+      $scope.hairValue = $scope.motherHairValue
+    }
+    console.log($scope.hairValue)
   }
 
 // WidowsPeak
-  $scope.fatherWidowsPeak = function(apperience) {
+  $scope.fatherWidowsPeak = function(apperience, value) {
     $scope.fatherPeak = apperience
+    $scope.fatherPeakValue = value
   }
 
-  $scope.motherWidowsPeak = function(apperience) {
+  $scope.motherWidowsPeak = function(apperience, value) {
     $scope.motherPeak = apperience
+    $scope.motherPeakValue = value
+  }
+
+  $scope.peakComparison = function (){
+    if ($scope.fatherPeakValue > $scope.motherPeakValue){
+      $scope.peakValue = $scope.fatherPeakValue
+    } else {
+      $scope.peakValue = $scope.motherPeakValue
+    }
+    console.log($scope.peakValue)
   }
 
 // HairColor
-  $scope.fatherHairColors = function(color) {
+  $scope.fatherHairColors = function(color, value) {
     $scope.fatherHairColor = color
+    $scope.fatherHairColorValue = value
   }
 
-  $scope.motherHairColors = function(color) {
+  $scope.motherHairColors = function(color, value) {
     $scope.motherHairColor = color
+    $scope.motherHairColorValue = value
+  }
+
+  $scope.hairColorComparison = function (){
+    if ($scope.fatherHairColorValue > $scope.motherHairColorValue){
+      $scope.hairColorValue = $scope.fatherHairColorValue
+    } else {
+      $scope.hairColorValue = $scope.motherHairColorValue
+    }
+    console.log($scope.hairColorValue)
   }
 
 // Hairy
-  $scope.fatherHairyPerson = function(apperience) {
+  $scope.fatherHairyPerson = function(apperience, value) {
     $scope.fatherHairy = apperience
+    $scope.fatherHairyValue = value
   }
 
-  $scope.motherHairyPerson = function(apperience) {
+  $scope.motherHairyPerson = function(apperience, value) {
     $scope.motherHairy = apperience
+    $scope.motherHairyValue = value
+  }
+
+  $scope.hairyComparison = function (){
+    if ($scope.fatherHairyValue > $scope.motherHairyValue){
+      $scope.hairyValue = $scope.fatherHairyValue
+    } else {
+      $scope.hairyValue = $scope.motherHairyValue
+    }
+    console.log($scope.hairyValue)
   }
 
 

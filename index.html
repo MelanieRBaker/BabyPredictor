@@ -26,8 +26,8 @@
         {{ fatherSkin }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherSkin">
-        <li role="menuitem"><a ng-click="fatherSkinColor('Olive')" href="javascript:void(0);">Olive</a></li>
-        <li role="menuitem"><a ng-click="fatherSkinColor('Pale')" href="javascript:void(0);">Pale</a></li>
+        <li role="menuitem"><a ng-click="fatherSkinColor('Olive', 1)" href="javascript:void(0);">Olive</a></li>
+        <li role="menuitem"><a ng-click="fatherSkinColor('Pale', 0)" href="javascript:void(0);">Pale</a></li>
       </ul>
     </div>
 
@@ -38,11 +38,11 @@
         {{ motherSkin }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherskin">
-        <li role="menuitem"><a ng-click="motherSkinColor('Olive')" href="javascript:void(0);">Olive</a></li>
-        <li role="menuitem"><a ng-click="motherSkinColor('Pale')" href="javascript:void(0);">Pale</a></li>
+        <li role="menuitem"><a ng-click="motherSkinColor('Olive', 1)" href="javascript:void(0);">Olive</a></li>
+        <li role="menuitem"><a ng-click="motherSkinColor('Pale', 0)" href="javascript:void(0);">Pale</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="skinComparison()">
    </div>
 
 <!-- Eye Brows -->
@@ -55,8 +55,8 @@
         {{ fatherBrows }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherBrows">
-        <li role="menuitem"><a ng-click="fatherBrowsConnection('Separate')" href="javascript:void(0);">Separate</a></li>
-        <li role="menuitem"><a ng-click="fatherBrowsConnection('Joined')" href="javascript:void(0);">Joined</a></li>
+        <li role="menuitem"><a ng-click="fatherBrowsConnection('Separate', 1)" href="javascript:void(0);">Separate</a></li>
+        <li role="menuitem"><a ng-click="fatherBrowsConnection('Joined', 0)" href="javascript:void(0);">Joined</a></li>
       </ul>
     </div>
 
@@ -67,11 +67,11 @@
         {{ motherBrows }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherBrows">
-        <li role="menuitem"><a ng-click="motherBrowsConnection('Separate')" href="javascript:void(0);">Separate</a></li>
-        <li role="menuitem"><a ng-click="motherBrowsConnection('Joined')" href="javascript:void(0);">Joined</a></li>
+        <li role="menuitem"><a ng-click="motherBrowsConnection('Separate', 1)" href="javascript:void(0);">Separate</a></li>
+        <li role="menuitem"><a ng-click="motherBrowsConnection('Joined', 0)" href="javascript:void(0);">Joined</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="browsComparison()">
    </div>
 
 <!-- Eye Color -->
@@ -84,8 +84,8 @@
         {{ fatherEye }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherEye">
-        <li role="menuitem"><a ng-click="fatherEyeColor('Brown')" href="javascript:void(0);">Brown</a></li>
-        <li role="menuitem"><a ng-click="fatherEyeColor('Blue')" href="javascript:void(0);">Blue</a></li>
+        <li role="menuitem"><a ng-click="fatherEyeColor('Brown', 1)" href="javascript:void(0);">Brown</a></li>
+        <li role="menuitem"><a ng-click="fatherEyeColor('Blue', 0)" href="javascript:void(0);">Blue</a></li>
       </ul>
     </div>
 
@@ -96,11 +96,11 @@
         {{ motherEye }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherEye">
-        <li role="menuitem"><a ng-click="motherEyeColor('Brown')" href="javascript:void(0);">Brown</a></li>
-        <li role="menuitem"><a ng-click="motherEyeColor('Blue')" href="javascript:void(0);">Blue</a></li>
+        <li role="menuitem"><a ng-click="motherEyeColor('Brown', 1)" href="javascript:void(0);">Brown</a></li>
+        <li role="menuitem"><a ng-click="motherEyeColor('Blue', 0)" href="javascript:void(0);">Blue</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="eyeComparison()">
    </div>
 
 <!-- Lash Length -->
@@ -113,8 +113,8 @@
         {{ fatherLash }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherLash">
-        <li role="menuitem"><a ng-click="fatherLashLength('Long')" href="javascript:void(0);">Long</a></li>
-        <li role="menuitem"><a ng-click="fatherLashLength('Short')" href="javascript:void(0);">Short</a></li>
+        <li role="menuitem"><a ng-click="fatherLashLength('Long', 1)" href="javascript:void(0);">Long</a></li>
+        <li role="menuitem"><a ng-click="fatherLashLength('Short', 0)" href="javascript:void(0);">Short</a></li>
       </ul>
     </div>
 
@@ -125,11 +125,11 @@
         {{ motherLash }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherLash">
-        <li role="menuitem"><a ng-click="motherLashLength('Long')" href="javascript:void(0);">Long</a></li>
-        <li role="menuitem"><a ng-click="motherLashLength('Short')" href="javascript:void(0);">Short</a></li>
+        <li role="menuitem"><a ng-click="motherLashLength('Long', 1)" href="javascript:void(0);">Long</a></li>
+        <li role="menuitem"><a ng-click="motherLashLength('Short', 0)" href="javascript:void(0);">Short</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="lashComparison()">
    </div>
 
 <!-- Dimples -->
@@ -142,8 +142,8 @@
         {{ fatherDimples }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherDimples">
-        <li role="menuitem"><a ng-click="fatherDimplesApperience('Has Dimples')" href="javascript:void(0);">Has Dimples</a></li>
-        <li role="menuitem"><a ng-click="fatherDimplesApperience('No Dimples')" href="javascript:void(0);">No Dimples</a></li>
+        <li role="menuitem"><a ng-click="fatherDimplesApperience('Has Dimples', 1)" href="javascript:void(0);">Has Dimples</a></li>
+        <li role="menuitem"><a ng-click="fatherDimplesApperience('No Dimples', 0)" href="javascript:void(0);">No Dimples</a></li>
       </ul>
     </div>
 
@@ -154,11 +154,11 @@
         {{ motherDimples }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherDimples">
-        <li role="menuitem"><a ng-click="motherDimplesApperience('Has Dimples')" href="javascript:void(0);">Has Dimples</a></li>
-        <li role="menuitem"><a ng-click="motherDimplesApperience('No Dimples')" href="javascript:void(0);">No Dimples</a></li>
+        <li role="menuitem"><a ng-click="motherDimplesApperience('Has Dimples', 1)" href="javascript:void(0);">Has Dimples</a></li>
+        <li role="menuitem"><a ng-click="motherDimplesApperience('No Dimples', 0)" href="javascript:void(0);">No Dimples</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="dimplesComparison()">
    </div>
 
 <!-- Freckles -->
@@ -171,8 +171,8 @@
         {{ fatherFreckles }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherFreckles">
-        <li role="menuitem"><a ng-click="fatherFrecklesApperience('Has Freckles')" href="javascript:void(0);">Has Freckles</a></li>
-        <li role="menuitem"><a ng-click="fatherFrecklesApperience('No Freckles')" href="javascript:void(0);">No Freckles</a></li>
+        <li role="menuitem"><a ng-click="fatherFrecklesApperience('Has Freckles', 1)" href="javascript:void(0);">Has Freckles</a></li>
+        <li role="menuitem"><a ng-click="fatherFrecklesApperience('No Freckles', 0)" href="javascript:void(0);">No Freckles</a></li>
       </ul>
     </div>
 
@@ -183,11 +183,11 @@
         {{ motherFreckles }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherFreckles">
-        <li role="menuitem"><a ng-click="motherFrecklesApperience('Has Freckles')" href="javascript:void(0);">Has Freckles</a></li>
-        <li role="menuitem"><a ng-click="motherFrecklesApperience('No Freckles')" href="javascript:void(0);">No Freckles</a></li>
+        <li role="menuitem"><a ng-click="motherFrecklesApperience('Has Freckles', 1)" href="javascript:void(0);">Has Freckles</a></li>
+        <li role="menuitem"><a ng-click="motherFrecklesApperience('No Freckles', 0)" href="javascript:void(0);">No Freckles</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="frecklesComparison()">
    </div>
 
 <!-- Ear Lobes -->
@@ -200,8 +200,8 @@
         {{ fatherEar }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherEar">
-        <li role="menuitem"><a ng-click="fatherEarLobes('Unattached')" href="javascript:void(0);">Unattached</a></li>
-        <li role="menuitem"><a ng-click="fatherEarLobes('Attached')" href="javascript:void(0);">Attached</a></li>
+        <li role="menuitem"><a ng-click="fatherEarLobes('Unattached', 1)" href="javascript:void(0);">Unattached</a></li>
+        <li role="menuitem"><a ng-click="fatherEarLobes('Attached', 0)" href="javascript:void(0);">Attached</a></li>
       </ul>
     </div>
 
@@ -212,11 +212,11 @@
         {{ motherEar }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherEar">
-        <li role="menuitem"><a ng-click="motherEarLobes('Unattached')" href="javascript:void(0);">Unattached</a></li>
-        <li role="menuitem"><a ng-click="motherEarLobes('Attached')" href="javascript:void(0);">Attached</a></li>
+        <li role="menuitem"><a ng-click="motherEarLobes('Unattached', 1)" href="javascript:void(0);">Unattached</a></li>
+        <li role="menuitem"><a ng-click="motherEarLobes('Attached', 0)" href="javascript:void(0);">Attached</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="earComparison()">
    </div>
 
 <!-- Hair Type -->
@@ -229,8 +229,8 @@
         {{ fatherHair }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherHair">
-        <li role="menuitem"><a ng-click="fatherHairType('Curly')" href="javascript:void(0);">Curly</a></li>
-        <li role="menuitem"><a ng-click="fatherHairType('Straight')" href="javascript:void(0);">Straight</a></li>
+        <li role="menuitem"><a ng-click="fatherHairType('Curly', 1)" href="javascript:void(0);">Curly</a></li>
+        <li role="menuitem"><a ng-click="fatherHairType('Straight', 0)" href="javascript:void(0);">Straight</a></li>
       </ul>
     </div>
 
@@ -241,11 +241,11 @@
         {{ motherHair }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherHair">
-        <li role="menuitem"><a ng-click="motherHairType('Curly')" href="javascript:void(0);">Curly</a></li>
-        <li role="menuitem"><a ng-click="motherHairType('Straight')" href="javascript:void(0);">Straight</a></li>
+        <li role="menuitem"><a ng-click="motherHairType('Curly', 1)" href="javascript:void(0);">Curly</a></li>
+        <li role="menuitem"><a ng-click="motherHairType('Straight', 0)" href="javascript:void(0);">Straight</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="hairComparison()">
    </div>
 
 <!-- Widows Peak -->
@@ -258,8 +258,8 @@
         {{ fatherPeak }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherPeak">
-        <li role="menuitem"><a ng-click="fatherWidowsPeak('Has Peak')" href="javascript:void(0);">Has Peak</a></li>
-        <li role="menuitem"><a ng-click="fatherWidowsPeak('No Peak')" href="javascript:void(0);">No Peak</a></li>
+        <li role="menuitem"><a ng-click="fatherWidowsPeak('Has Peak', 1)" href="javascript:void(0);">Has Peak</a></li>
+        <li role="menuitem"><a ng-click="fatherWidowsPeak('No Peak', 0)" href="javascript:void(0);">No Peak</a></li>
       </ul>
     </div>
 
@@ -270,11 +270,11 @@
         {{ motherPeak }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherPeak">
-        <li role="menuitem"><a ng-click="motherWidowsPeak('Has Peak')" href="javascript:void(0);">Has Peak</a></li>
-        <li role="menuitem"><a ng-click="motherWidowsPeak('No Peak')" href="javascript:void(0);">No Peak</a></li>
+        <li role="menuitem"><a ng-click="motherWidowsPeak('Has Peak', 1)" href="javascript:void(0);">Has Peak</a></li>
+        <li role="menuitem"><a ng-click="motherWidowsPeak('No Peak', 0)" href="javascript:void(0);">No Peak</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="peakComparison()">
    </div>
 
 
@@ -288,8 +288,8 @@
         {{ fatherHairColor }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherHairColor">
-        <li role="menuitem"><a ng-click="fatherHairColors('Black')" href="javascript:void(0);">Black</a></li>
-        <li role="menuitem"><a ng-click="fatherHairColors('Brown')" href="javascript:void(0);">Brown</a></li>
+        <li role="menuitem"><a ng-click="fatherHairColors('Black', 1)" href="javascript:void(0);">Black</a></li>
+        <li role="menuitem"><a ng-click="fatherHairColors('Brown', 0)" href="javascript:void(0);">Brown</a></li>
       </ul>
     </div>
 
@@ -300,11 +300,11 @@
         {{ motherHairColor }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherHairColor">
-        <li role="menuitem"><a ng-click="motherHairColors('Black')" href="javascript:void(0);">Black</a></li>
-        <li role="menuitem"><a ng-click="motherHairColors('Brown')" href="javascript:void(0);">Brown</a></li>
+        <li role="menuitem"><a ng-click="motherHairColors('Black', 1)" href="javascript:void(0);">Black</a></li>
+        <li role="menuitem"><a ng-click="motherHairColors('Brown', 0)" href="javascript:void(0);">Brown</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="hairColorComparison()">
    </div>
 
 <!-- Hairy -->
@@ -317,8 +317,8 @@
         {{ fatherHairy }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="fatherHairy">
-        <li role="menuitem"><a ng-click="fatherHairyPerson('Hairy')" href="javascript:void(0);">Hairy</a></li>
-        <li role="menuitem"><a ng-click="fatherHairyPerson('Not Hairy')" href="javascript:void(0);">Not Hairy</a></li>
+        <li role="menuitem"><a ng-click="fatherHairyPerson('Hairy', 1)" href="javascript:void(0);">Hairy</a></li>
+        <li role="menuitem"><a ng-click="fatherHairyPerson('Not Hairy', 0)" href="javascript:void(0);">Not Hairy</a></li>
       </ul>
     </div>
 
@@ -329,11 +329,11 @@
         {{ motherHairy }} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="motherHairy">
-        <li role="menuitem"><a ng-click="motherHairyPerson('Hairy')" href="javascript:void(0);">Hairy</a></li>
-        <li role="menuitem"><a ng-click="motherHairyPerson('Not Hairy')" href="javascript:void(0);">Not Hairy</a></li>
+        <li role="menuitem"><a ng-click="motherHairyPerson('Hairy', 1)" href="javascript:void(0);">Hairy</a></li>
+        <li role="menuitem"><a ng-click="motherHairyPerson('Not Hairy', 0)" href="javascript:void(0);">Not Hairy</a></li>
       </ul>
     </div>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" ng-click="hairyComparison()">
    </div>
 
   </div>
