@@ -44,3 +44,27 @@ input[type=submit] {
     border-radius: 0;
     line-height: 90%;
 }
+
+.skinOlive {
+  background-image: url(img/faceolive.png);
+  height: 765px;
+  width: 640px;
+  background-size: 640px 765px;
+  display: block;
+}
+
+.skinPale {
+  background-image: url(img/facepale.png);
+  height: 765px;
+  width: 640px;
+  background-size: 640px 765px;
+  display: block;
+}
+
+#menucontainer {
+  float: left;
+}
+
+#rightcontainer {
+  float: left;
+}

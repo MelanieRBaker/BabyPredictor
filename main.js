@@ -64,6 +64,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.skinValue = $scope.motherSkinValue
     }
     console.log($scope.skinValue)
+    if ($scope.skinValue === 1){
+      var dominantSkin = angular.element( document.querySelector( '#skin' ) );
+      dominantSkin.addClass('skinOlive');
+    } else {
+      var recessiveSkin = angular.element( document.querySelector( '#skin' ) );
+      recessiveSkin.addClass('skinPale');
+    }
   }
 
 // Brows
