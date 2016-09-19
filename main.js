@@ -32,8 +32,8 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   $scope.fatherHairColor = 'Pick';
   $scope.motherHairColor = 'Pick';
 
-  $scope.fatherHairy = 'Pick';
-  $scope.motherHairy = 'Pick';
+  // $scope.fatherHairy = 'Pick';
+  // $scope.motherHairy = 'Pick';
 
   $scope.status = {
     isopen: false
@@ -111,6 +111,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.eyeValue = $scope.motherEyeValue
     }
     console.log($scope.eyeValue)
+    if ($scope.eyeValue === 1){
+      var dominantEye = angular.element( document.querySelector( '#eye' ) );
+      dominantEye.addClass('eyeBrown');
+    } else {
+      var recessiveEye = angular.element( document.querySelector( '#eye' ) );
+      recessiveEye.addClass('eyeBlue');
+    }
   }
 
 // lash
@@ -253,25 +260,25 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
     console.log($scope.hairColorValue)
   }
 
-// Hairy
-  $scope.fatherHairyPerson = function(apperience, value) {
-    $scope.fatherHairy = apperience
-    $scope.fatherHairyValue = value
-  }
+// // Hairy
+//   $scope.fatherHairyPerson = function(apperience, value) {
+//     $scope.fatherHairy = apperience
+//     $scope.fatherHairyValue = value
+//   }
 
-  $scope.motherHairyPerson = function(apperience, value) {
-    $scope.motherHairy = apperience
-    $scope.motherHairyValue = value
-  }
+//   $scope.motherHairyPerson = function(apperience, value) {
+//     $scope.motherHairy = apperience
+//     $scope.motherHairyValue = value
+//   }
 
-  $scope.hairyComparison = function (){
-    if ($scope.fatherHairyValue > $scope.motherHairyValue){
-      $scope.hairyValue = $scope.fatherHairyValue
-    } else {
-      $scope.hairyValue = $scope.motherHairyValue
-    }
-    console.log($scope.hairyValue)
-  }
+//   $scope.hairyComparison = function (){
+//     if ($scope.fatherHairyValue > $scope.motherHairyValue){
+//       $scope.hairyValue = $scope.fatherHairyValue
+//     } else {
+//       $scope.hairyValue = $scope.motherHairyValue
+//     }
+//     console.log($scope.hairyValue)
+//   }
 
 
 

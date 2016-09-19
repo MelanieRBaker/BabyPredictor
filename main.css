@@ -47,17 +47,33 @@ input[type=submit] {
 
 .skinOlive {
   background-image: url(img/faceolive.png);
-  height: 765px;
   width: 640px;
+  height: 765px;
   background-size: 640px 765px;
   display: block;
 }
 
 .skinPale {
   background-image: url(img/facepale.png);
-  height: 765px;
   width: 640px;
+  height: 765px;
   background-size: 640px 765px;
+  display: block;
+}
+
+.eyeBrown {
+  background-image: url(img/browneyes.png);
+  width: 448px;
+  height: 162px;
+  background-size: 448px 162px;
+  display: block;
+}
+
+.eyeBlue {
+  background-image: url(img/blueeyes.png);
+  width: 448px;
+  height: 162px;
+  background-size: 448px 162px;
   display: block;
 }
 
