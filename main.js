@@ -5,6 +5,9 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
   $scope.fatherSkin = 'Pick';
   $scope.motherSkin = 'Pick';
 
+  $scope.fatherEar = 'Pick';
+  $scope.motherEar = 'Pick';
+
   $scope.fatherBrows = 'Pick';
   $scope.motherBrows = 'Pick';
 
@@ -19,9 +22,6 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
 
   $scope.fatherFreckles = 'Pick';
   $scope.motherFreckles = 'Pick';
-
-  $scope.fatherEar = 'Pick';
-  $scope.motherEar = 'Pick';
 
   $scope.fatherHair = 'Pick';
   $scope.motherHair = 'Pick';
@@ -73,6 +73,27 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
     }
   }
 
+// EarLobes
+  $scope.fatherEarLobes = function(apperience, value) {
+    $scope.fatherEar = apperience
+    $scope.fatherEarValue = value
+  }
+
+  $scope.motherEarLobes = function(apperience, value) {
+    $scope.motherEar = apperience
+    $scope.motherEarValue = value
+  }
+
+   $scope.earComparison = function (){
+    if ($scope.fatherEarValue > $scope.motherEarValue){
+      $scope.earValue = $scope.fatherEarValue
+    } else {
+      $scope.earValue = $scope.motherEarValue
+    }
+    console.log($scope.earValue)
+  }
+
+
 // Brows
   $scope.fatherBrowsConnection = function(connection, value) {
     $scope.fatherBrows = connection
@@ -91,6 +112,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.browsValue = $scope.motherBrowsValue
     }
     console.log($scope.browsValue)
+    if ($scope.browsValue === 1){
+      var dominantBrows = angular.element( document.querySelector( '#brows' ) );
+      dominantBrows.addClass('seperated');
+    } else {
+      var recessiveBrows = angular.element( document.querySelector( '#brows' ) );
+      recessiveBrows.addClass('joined');
+    }
   }
 
 // eyecolor
@@ -178,26 +206,6 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.frecklesValue = $scope.motherFrecklesValue
     }
     console.log($scope.frecklesValue)
-  }
-
-// EarLobes
-  $scope.fatherEarLobes = function(apperience, value) {
-    $scope.fatherEar = apperience
-    $scope.fatherEarValue = value
-  }
-
-  $scope.motherEarLobes = function(apperience, value) {
-    $scope.motherEar = apperience
-    $scope.motherEarValue = value
-  }
-
-   $scope.earComparison = function (){
-    if ($scope.fatherEarValue > $scope.motherEarValue){
-      $scope.earValue = $scope.fatherEarValue
-    } else {
-      $scope.earValue = $scope.motherEarValue
-    }
-    console.log($scope.earValue)
   }
 
 // HairType
