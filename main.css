@@ -93,6 +93,38 @@ input[type=submit] {
   display: block;
 }
 
+.longLash {
+  background-image: url(img/longlash.png);
+  width: 366px;
+  height: 59px;
+  background-size: 366px 59px;
+  display: block;
+}
+
+.shortLash {
+  background-image: url(img/shortlash.png);
+  width: 366px;
+  height: 59px;
+  background-size: 366px 59px;
+  display: block;
+}
+
+.hasDimples {
+  background-image: url(img/dimples.png);
+  width: 175px;
+  height: 46px;
+  background-size: 175px 46px;
+  display: block;
+}
+
+.hasFreckles {
+  background-image: url(img/freckles.png);
+  width: 458px;
+  height: 54px;
+  background-size: 458px 54px;
+  display: block;
+}
+
 #menucontainer {
   float: left;
 }

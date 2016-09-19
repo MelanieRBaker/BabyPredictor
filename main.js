@@ -166,6 +166,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.lashValue = $scope.motherLashValue
     }
     console.log($scope.lashValue)
+    if ($scope.lashValue === 1){
+      var dominantLash = angular.element( document.querySelector( '#lash' ) );
+      dominantLash.addClass('longLash');
+    } else {
+      var recessiveLash = angular.element( document.querySelector( '#lash' ) );
+      recessiveLash.addClass('shortLash');
+    }
   }
 
 // Dimples
@@ -186,6 +193,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.dimplesValue = $scope.motherDimplesValue
     }
     console.log($scope.dimplesValue)
+    if ($scope.dimplesValue === 1){
+      var dominantDimples = angular.element( document.querySelector( '#dimples' ) );
+      dominantDimples.addClass('hasDimples');
+    } else {
+      var recessiveDimples = angular.element( document.querySelector( '#dimples' ) );
+      recessiveDimples.addClass('noDimples');
+    }
   }
 
 // Freckles
@@ -206,6 +220,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.frecklesValue = $scope.motherFrecklesValue
     }
     console.log($scope.frecklesValue)
+    if ($scope.frecklesValue === 1){
+      var dominantFreckles = angular.element( document.querySelector( '#freckles' ) );
+      dominantFreckles.addClass('hasFreckles');
+    } else {
+      var recessiveFreckles = angular.element( document.querySelector( '#freckles' ) );
+      recessiveFreckles.addClass('noFreckles');
+    }
   }
 
 // HairType
