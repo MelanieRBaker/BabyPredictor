@@ -64,16 +64,17 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.skinValue = $scope.motherSkinValue
     }
     console.log($scope.skinValue)
+    var skin = angular.element( document.querySelector( '#skin' ) );
     if ($scope.skinValue === 1){
-      var dominantSkin = angular.element( document.querySelector( '#skin' ) );
-      dominantSkin.addClass('skinOlive');
+      skin.addClass('skinOlive');
+      skin.removeClass('skinPale');
     } else {
-      var recessiveSkin = angular.element( document.querySelector( '#skin' ) );
-      recessiveSkin.addClass('skinPale');
+      skin.addClass('skinPale');
+      skin.removeClass('skinOlive');
     }
   }
 
-// EarLobes
+  // EarLobes
   $scope.fatherEarLobes = function(apperience, value) {
     $scope.fatherEar = apperience
     $scope.fatherEarValue = value
@@ -91,7 +92,11 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.earValue = $scope.motherEarValue
     }
     console.log($scope.earValue)
+    console.log($scope.skinValue)
   }
+
+
+
 
 
 // Brows
@@ -112,12 +117,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.browsValue = $scope.motherBrowsValue
     }
     console.log($scope.browsValue)
+    var brows = angular.element( document.querySelector( '#brows' ) );
     if ($scope.browsValue === 1){
-      var dominantBrows = angular.element( document.querySelector( '#brows' ) );
-      dominantBrows.addClass('seperated');
+      brows.addClass('seperatedBrows');
+      brows.removeClass('joinedBrows');
     } else {
-      var recessiveBrows = angular.element( document.querySelector( '#brows' ) );
-      recessiveBrows.addClass('joined');
+      brows.addClass('joinedBrows');
+      brows.removeClass('seperatedBrows');
     }
   }
 
@@ -139,12 +145,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.eyeValue = $scope.motherEyeValue
     }
     console.log($scope.eyeValue)
+    var eye = angular.element( document.querySelector( '#eye' ) );
     if ($scope.eyeValue === 1){
-      var dominantEye = angular.element( document.querySelector( '#eye' ) );
-      dominantEye.addClass('eyeBrown');
+      eye.addClass('eyeBrown');
+      eye.removeClass('eyeBlue')
     } else {
-      var recessiveEye = angular.element( document.querySelector( '#eye' ) );
-      recessiveEye.addClass('eyeBlue');
+      eye.addClass('eyeBlue');
+      eye.removeClass('eyeBrown')
     }
   }
 
@@ -166,12 +173,13 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.lashValue = $scope.motherLashValue
     }
     console.log($scope.lashValue)
+    var lash = angular.element( document.querySelector( '#lash' ) );
     if ($scope.lashValue === 1){
-      var dominantLash = angular.element( document.querySelector( '#lash' ) );
-      dominantLash.addClass('longLash');
+      lash.addClass('longLash');
+      lash.removeClass('shortLash')
     } else {
-      var recessiveLash = angular.element( document.querySelector( '#lash' ) );
-      recessiveLash.addClass('shortLash');
+      lash.addClass('shortLash');
+      lash.removeClass('longLash')
     }
   }
 
@@ -193,12 +201,12 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.dimplesValue = $scope.motherDimplesValue
     }
     console.log($scope.dimplesValue)
+    var dimples = angular.element( document.querySelector( '#dimples' ) );
     if ($scope.dimplesValue === 1){
-      var dominantDimples = angular.element( document.querySelector( '#dimples' ) );
-      dominantDimples.addClass('hasDimples');
+      dimples.addClass('hasDimples');
+      dimples.removeClass('noDimples')
     } else {
-      var recessiveDimples = angular.element( document.querySelector( '#dimples' ) );
-      recessiveDimples.addClass('noDimples');
+      dimples.removeClass('hasDimples');
     }
   }
 
@@ -220,12 +228,12 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.frecklesValue = $scope.motherFrecklesValue
     }
     console.log($scope.frecklesValue)
+    var freckles = angular.element( document.querySelector( '#freckles' ) );
     if ($scope.frecklesValue === 1){
-      var dominantFreckles = angular.element( document.querySelector( '#freckles' ) );
-      dominantFreckles.addClass('hasFreckles');
+      freckles.addClass('hasFreckles');
+      freckles.removeClass('noFreckles')
     } else {
-      var recessiveFreckles = angular.element( document.querySelector( '#freckles' ) );
-      recessiveFreckles.addClass('noFreckles');
+      freckles.removeClass('hasFreckles');
     }
   }
 
@@ -323,3 +331,4 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
 
   $scope.appendToEl = angular.element(document.querySelector('#dropdown-long-content'));
 });
+
