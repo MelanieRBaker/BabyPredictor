@@ -200,7 +200,7 @@ input[type=submit] {
   left: 167px;
 }
 
-.hairBlackCurlyNoWidows {
+.hairBlackCurlyNoPeak {
   background-image: url(img/curlyblacknowidowhair.png);
   width: 300px;
   height: 147.5px;
@@ -211,7 +211,7 @@ input[type=submit] {
   left: 140px;
 }
 
-.hairBrownCurlyNoWidows {
+.hairBrownCurlyNoPeak {
   background-image: url(img/curlybrownnowidowhair.png);
   width: 300px;
   height: 147.5px;
@@ -222,7 +222,7 @@ input[type=submit] {
   left: 140px;
 }
 
-.hairBlackStraightNoWidows {
+.hairBlackStraightNoPeak {
   background-image: url(img/straightblacknowidowhair.png);
   width: 251px;
   height: 160px;
@@ -233,7 +233,7 @@ input[type=submit] {
   left: 156px;
 }
 
-.hairBrownStraightNoWidows {
+.hairBrownStraightNoPeak {
   background-image: url(img/straightbrownnowidowhair.png);
   width: 251px;
   height: 160px;
@@ -244,36 +244,48 @@ input[type=submit] {
   left: 156px;
 }
 
-.hairBlackCurlyWidows {
+.hairBlackCurlyPeak {
   background-image: url(img/curlyblackwidowhair.png);
   width: 300px;
   height: 215.5px;
   background-size: 300px 215.5px;
   display: block;
+  position: absolute;
+  top: 46px;
+  left: 140px;
 }
 
-.hairBrownCurlyWidows{
+.hairBrownCurlyPeak{
   background-image: url(img/curlybrownwidowhair.png);
   width: 300px;
   height: 215.5px;
   background-size: 300px 215.5px;
   display: block;
+  position: absolute;
+  top: 46px;
+  left: 140px;
 }
 
-.hairBlackStraightWidows{
+.hairBlackStraightPeak{
   background-image: url(img/straightblackwidowhair.png);
   width: 251px;
   height: 200px;
   background-size: 251px 200px;
   display: block;
+  position: absolute;
+  top: 64px;
+  left: 156px;
 }
 
-.hairBrownStraightWidows{
+.hairBrownStraightPeak{
   background-image: url(img/straightbrownwidowhair.png);
   width: 251px;
   height: 200px;
   background-size: 251px 200px;
   display: block;
+  position: absolute;
+  top: 64px;
+  left: 156px;
 }
 
 
@@ -287,175 +299,3 @@ input[type=submit] {
   width:500px;
   height:700px;
 }
-
-
-
-/*original*/
-/*body {
-  background-color: #e2e2e2;
-}
-
-nav {background-color: green;}
-
-
-.thecontainer {max-width:1350px; width:100%; margin:0 auto; padding:0 3%; display:block; margin-bottom:100px;}
-
-nav .thecontainer {margin-bottom:0;}
-
-h1 {
-    margin: 0;
-
-    color: #fff;
-    line-height: 140%;
-    text-align: left;
-}
-
-h2 {
-  font-size: 18px;
-  margin-bottom: 0;
-}
-
-p {
-  margin: 0 0 2px;
-}
-
-input[type=submit] {
-    vertical-align: bottom;
-    background-color: #333;
-    border: 0;
-    padding: 5px 10px;
-    line-height: 100%;
-    color: #fff;
-}
-
-
-.btn-primary {
-    color: #fff;
-    background-color: #999;
-    border-color: #999;
-    padding: 5px 10px;
-    border-radius: 0;
-    line-height: 90%;
-}
-
-.skinOlive {
-  background-image: url(img/faceolive.png);
-  width: 320px;
-  height: 382px;
-  background-size: 320px 382px;
-  display: block;
-      position: absolute;
-    top: 150px;
-    left: 120px;
-}
-
-.skinPale {
-  background-image: url(img/facepale.png);
-  width: 320px;
-  height: 382px;
-  background-size: 320px 382px;
-  display: block;
-  position: absolute;
-  top: 150px;
-  left: 120px;
-}
-
-.eyeBrown {
-  background-image: url(img/browneyes.png);
-  width: 224px;
-  height: 81px;
-  background-size: 224px 81px;
-  display: block;
-  position: absolute;
-  top: 300px;
-  left: 165px;
-}
-
-.eyeBlue {
-  background-image: url(img/blueeyes.png);
-  width: 224px;
-  height: 81px;
-  background-size: 224px 81px;
-  display: block;
-  position: absolute;
-  top: 300px;
-  left: 165px;
-}
-
-.seperatedBrows {
-  background-image: url(img/uneyebrow.png);
-  width: 240px;
-  height: 31px;
-  background-size: 240px 31px;
-  display: block;
-  position: absolute;
-  top: 252px;
-  left: 155px;
-}
-
-.joinedBrows {
-  background-image: url(img/joineyebrow.png);
-  width: 229px;
-  height: 37px;
-  background-size: 229px 37px;
-  display: block;
-  position: absolute;
-  top: 252px;
-  left: 162px;
-}
-
-.longLash {
-  background-image: url(img/longlash.png);
-  width: 183px;
-  height: 30px;
-  background-size: 183px 30px;
-  display: block;
-  position: absolute;
-  top: 279px;
-  left: 184px;
-}
-
-.shortLash {
-  background-image: url(img/shortlash.png);
-  width: 183px;
-  height: 30px;
-  background-size: 183px 30px;
-  display: block;
-  position: absolute;
-  top: 279px;
-  left: 184px;
-}
-
-.hasDimples {
-  background-image: url(img/dimples.png);
-  width: 88px;
-  height: 23px;
-  background-size: 88px 23px;
-  display: block;
-  position: absolute;
-  top: 417px;
-  left: 236px;
-}
-
-.hasFreckles {
-  background-image: url(img/freckles.png);
-  width: 229px;
-  height: 27px;
-  background-size: 229px 27px;
-  display: block;
-  position: absolute;
-  top: 400px;
-  left: 167px;
-}
-
-#menucontainer {
-  float: left;
-}
-
-#rightcontainer {
-  float: left;
-  position: relative;
-  width:500px;
-  height:700px;
-}
-*/
