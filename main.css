@@ -42,13 +42,14 @@ input[type=submit] {
     padding: 5px 10px;
     border-radius: 0;
     line-height: 90%;
+    min-width: 110px;
 }
 
 .skinOlive {
   background-image: url(img/faceolive.png);
-  width: 320px;
-  height: 382px;
-  background-size: 320px 382px;
+  width: 322.5px;
+  height: 387.5px;
+  background-size: 322.5px 387.5px;
   display: block;
   position: absolute;
   top: 150px;
@@ -57,9 +58,9 @@ input[type=submit] {
 
 .skinPale {
   background-image: url(img/facepale.png);
-  width: 320px;
-  height: 382px;
-  background-size: 320px 382px;
+  width: 322.5px;
+  height: 387.5px;
+  background-size: 322.5px 387.5px;
   display: block;
   position: absolute;
   top: 150px;
@@ -70,28 +71,66 @@ input[type=submit] {
   background-image: url(img/unearolive.png);
   width: 380.5px;
   height: 115.5px;
+  background-size: 380px 115.5px;
   display: block;
+  position: absolute;
+  top: 310px;
+  left: 92px;
 }
 
 .earUnattachedPale {
   background-image: url(img/unearpale.png);
   width: 380.5px;
   height: 115.5px;
+  background-size: 380px 115.5px;
   display: block;
+  position: absolute;
+  top: 310px;
+  left: 92px;
 }
 
 .earAttachedOlive {
   background-image: url(img/atearolive.png);
   width: 380.5px;
   height: 95px;
+  background-size: 380px 95px;
   display: block;
+  position: absolute;
+  top: 310px;
+  left: 92px;
 }
 
 .earAttachedPale {
   background-image: url(img/atearpale.png);
   width: 380.5px;
   height: 95px;
+  background-size: 380px 95px;
   display: block;
+  position: absolute;
+  top: 310px;
+  left: 92px;
+}
+
+.seperatedBrows {
+  background-image: url(img/uneyebrow.png);
+  width: 240.5px;
+  height: 31px;
+  background-size: 240.5px 31px;
+  display: block;
+  position: absolute;
+  top: 252px;
+  left: 155px;
+}
+
+.joinedBrows {
+  background-image: url(img/joineyebrow.png);
+  width: 229px;
+  height: 37.5px;
+  background-size: 229px 37.5px;
+  display: block;
+  position: absolute;
+  top: 252px;
+  left: 162px;
 }
 
 .eyeBrown {
@@ -116,33 +155,12 @@ input[type=submit] {
   left: 165px;
 }
 
-.seperatedBrows {
-  background-image: url(img/uneyebrow.png);
-  width: 240px;
-  height: 31px;
-  background-size: 240px 31px;
-  display: block;
-  position: absolute;
-  top: 252px;
-  left: 155px;
-}
-
-.joinedBrows {
-  background-image: url(img/joineyebrow.png);
-  width: 229px;
-  height: 37px;
-  background-size: 229px 37px;
-  display: block;
-  position: absolute;
-  top: 252px;
-  left: 162px;
-}
 
 .longLash {
   background-image: url(img/longlash.png);
   width: 183px;
-  height: 30px;
-  background-size: 183px 30px;
+  height: 29.5px;
+  background-size: 183px 29.5px;
   display: block;
   position: absolute;
   top: 279px;
@@ -152,8 +170,8 @@ input[type=submit] {
 .shortLash {
   background-image: url(img/shortlash.png);
   width: 183px;
-  height: 30px;
-  background-size: 183px 30px;
+  height: 29.5px;
+  background-size: 183px 29.5px;
   display: block;
   position: absolute;
   top: 279px;
@@ -162,9 +180,9 @@ input[type=submit] {
 
 .hasDimples {
   background-image: url(img/dimples.png);
-  width: 88px;
+  width: 87.5px;
   height: 23px;
-  background-size: 88px 23px;
+  background-size: 87.5px 23px;
   display: block;
   position: absolute;
   top: 417px;
@@ -181,6 +199,83 @@ input[type=submit] {
   top: 400px;
   left: 167px;
 }
+
+.hairBlackCurlyNoWidows {
+  background-image: url(img/curlyblacknowidowhair.png);
+  width: 300px;
+  height: 147.5px;
+  background-size: 300px 147.5px;
+  display: block;
+  position: absolute;
+  top: 46px;
+  left: 140px;
+}
+
+.hairBrownCurlyNoWidows {
+  background-image: url(img/curlybrownnowidowhair.png);
+  width: 300px;
+  height: 147.5px;
+  background-size: 300px 147.5px;
+  display: block;
+  position: absolute;
+  top: 46px;
+  left: 140px;
+}
+
+.hairBlackStraightNoWidows {
+  background-image: url(img/straightblacknowidowhair.png);
+  width: 251px;
+  height: 160px;
+  background-size: 251px 160px;
+  display: block;
+  position: absolute;
+  top: 91px;
+  left: 156px;
+}
+
+.hairBrownStraightNoWidows {
+  background-image: url(img/straightbrownnowidowhair.png);
+  width: 251px;
+  height: 160px;
+  background-size: 251px 160px;
+  display: block;
+  position: absolute;
+  top: 91px;
+  left: 156px;
+}
+
+.hairBlackCurlyWidows {
+  background-image: url(img/curlyblackwidowhair.png);
+  width: 300px;
+  height: 215.5px;
+  background-size: 300px 215.5px;
+  display: block;
+}
+
+.hairBrownCurlyWidows{
+  background-image: url(img/curlybrownwidowhair.png);
+  width: 300px;
+  height: 215.5px;
+  background-size: 300px 215.5px;
+  display: block;
+}
+
+.hairBlackStraightWidows{
+  background-image: url(img/straightblackwidowhair.png);
+  width: 251px;
+  height: 200px;
+  background-size: 251px 200px;
+  display: block;
+}
+
+.hairBrownStraightWidows{
+  background-image: url(img/straightbrownwidowhair.png);
+  width: 251px;
+  height: 200px;
+  background-size: 251px 200px;
+  display: block;
+}
+
 
 #menucontainer {
   float: left;

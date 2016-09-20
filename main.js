@@ -39,13 +39,6 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
     isopen: false
   };
 
-
-
-
-
-
-
-
 // skin
   $scope.fatherSkinColor = function(color, value) {
     $scope.fatherSkin = color
@@ -93,21 +86,31 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.earValue = $scope.motherEarValue
     }
     console.log($scope.earValue)
-    // console.log($scope.skinValue)
     var ear = angular.element( document.querySelector( '#ear' ) );
     if ($scope.earValue === 1){ // if ear is unattached
       if ($scope.skinValue === 1) {  // if skin is olive
         ear.addClass('earUnattachedOlive');
+        ear.removeClass('earUnattachedPale');
+        ear.removeClass('earAttachedOlive');
+        ear.removeClass('earAttachedPale');
       } else { // skin is pale (ear is still unattached)
         ear.addClass('earUnattachedPale');
+        ear.removeClass('earUnattachedOlive');
+        ear.removeClass('earAttachedOlive');
+        ear.removeClass('earAttachedPale');
       }
     } else { // ear is attached
       if ($scope.skinValue === 1) { // if skin is olive
         ear.addClass('earAttachedOlive');
+        ear.removeClass('earUnattachedOlive');
+        ear.removeClass('earUnattachedPale');
+        ear.removeClass('earAttachedPale');
       } else { // ear is pale (ear is still attached)
         ear.addClass('earAttachedPale');
+        ear.removeClass('earUnattachedOlive');
+        ear.removeClass('earUnattachedPale');
+        ear.removeClass('earAttachedOlive');
       }
-
     }
   }
 
@@ -250,6 +253,35 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
     }
   }
 
+// HairColor
+  $scope.fatherHairColors = function(color, value) {
+    $scope.fatherHairColor = color
+    $scope.fatherHairColorValue = value
+  }
+
+  $scope.motherHairColors = function(color, value) {
+    $scope.motherHairColor = color
+    $scope.motherHairColorValue = value
+  }
+
+  $scope.hairColorComparison = function (){
+    if ($scope.fatherHairColorValue > $scope.motherHairColorValue){
+      $scope.hairColorValue = $scope.fatherHairColorValue
+    } else {
+      $scope.hairColorValue = $scope.motherHairColorValue
+    }
+    console.log($scope.hairColorValue)
+    var hair = angular.element( document.querySelector( '#hair' ) );
+    if ($scope.hairColorValue === 1){
+      hair.addClass('hairBlack');
+      hair.removeClass('hairBrown');
+    } else {
+      hair.addClass('hairBrown');
+      hair.removeClass('hairBlack');
+    }
+  }
+
+
 // HairType
   $scope.fatherHairType = function(type, value) {
     $scope.fatherHair = type
@@ -268,6 +300,33 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
       $scope.hairValue = $scope.motherHairValue
     }
     console.log($scope.hairValue)
+    var hairType = angular.element( document.querySelector( '#hairType' ) );
+    if ($scope.hairValue === 1){ // if hair is curly
+      if ($scope.hairColorValue === 1) {  // if hair is black
+        hairType.addClass('hairBlackCurlyNoWidows');
+        hairType.removeClass('hairBrownCurlyNoWidows');
+        hairType.removeClass('hairBlackStraightNoWidows');
+        hairType.removeClass('hairBrownStraightNoWidows');
+      } else { // hair is brown (hair is still curly)
+        hairType.addClass('hairBrownCurlyNoWidows');
+        hairType.removeClass('hairBlackCurlyNoWidows');
+        hairType.removeClass('hairBlackStraightNoWidows');
+        hairType.removeClass('hairBrownStraightNoWidows');
+      }
+    } else { // hair is straight
+      if ($scope.hairColorValue === 1) { // if hair is black
+        hairType.addClass('hairBlackStraightNoWidows');
+        hairType.removeClass('hairBlackCurlyNoWidows');
+        hairType.removeClass('hairBrownCurlyNoWidows');
+        hairType.removeClass('hairBrownStraightNoWidows');
+      } else { // hair is brown (hair is still straight)
+        hairType.addClass('hairBrownStraightNoWidows');
+        hairType.removeClass('hairBlackCurlyNoWidows');
+        hairType.removeClass('hairBrownCurlyNoWidows');
+        hairType.removeClass('hairBlackStraightNoWidows');
+      }
+    }
+
   }
 
 // WidowsPeak
@@ -290,25 +349,7 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
     console.log($scope.peakValue)
   }
 
-// HairColor
-  $scope.fatherHairColors = function(color, value) {
-    $scope.fatherHairColor = color
-    $scope.fatherHairColorValue = value
-  }
 
-  $scope.motherHairColors = function(color, value) {
-    $scope.motherHairColor = color
-    $scope.motherHairColorValue = value
-  }
-
-  $scope.hairColorComparison = function (){
-    if ($scope.fatherHairColorValue > $scope.motherHairColorValue){
-      $scope.hairColorValue = $scope.fatherHairColorValue
-    } else {
-      $scope.hairColorValue = $scope.motherHairColorValue
-    }
-    console.log($scope.hairColorValue)
-  }
 
 // // Hairy
 //   $scope.fatherHairyPerson = function(apperience, value) {
@@ -684,4 +725,3 @@ angular.module('ui.bootstrap.demo').controller('DropdownCtrl', function ($scope,
 
 //   $scope.appendToEl = angular.element(document.querySelector('#dropdown-long-content'));
 // });
-
